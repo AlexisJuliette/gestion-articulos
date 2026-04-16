@@ -1,0 +1,17 @@
+{
+    "name": "alexis/gestion-articulo",
+    "description": "Proyecto PHP con DDD y Arquitectura Hexagonal",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alexis\\GestionArticulo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ale18-ship",
+            "email": "acerap@unicartagena.edu.co"
+        }
+    ],
+    "require": {}
+}
