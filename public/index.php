@@ -1,10 +1,11 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+require_once __DIR__ . '/../src/Domain/Articulo.php';
+require_once __DIR__ . '/../src/Infrastructure/Persistence/MySQLArticuloRepository.php';
 
-require_once __DIR__ . '/../config/database.php';
+$articulo = new Articulo(null, "Celular", "Celular gama alta");
 
-$db = Database::connect();
+$repo = new MySQLArticuloRepository();
+$repo->save($articulo);
 
-echo "conexion exitosa";
+echo "articulo guardado";
